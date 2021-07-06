@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+/* css for loader */
+.loader_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #2f3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+   
+}
+
+.loader_container h1{
+   font-size: 4rem;
+   color: #fff;
+   position: relative; 
+}
+
+.loader_container h1::before{
+    content: '<>codeFreak</>';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #2ed573;
+    top: 0%;
+    left: 0%;
+    border-right: 1px solid #2ed573;
+    animation: slide 3s linear infinite;
+    -webkit-animation:  slide 2s linear infinite;
+    overflow: hidden;
+
+}
+
+@keyframes slide {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+::selection{
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+
+/* Main Conatiner section */
+.mainConatiner{
+    display: flex;
+    height: 181vh;
+    margin-top: 1px;
+}
+
+/* leftContainer  Design*/
+.leftContainer{
+    border: 2px solid rgb(30, 128, 255);
+    display: flex;
+    width: 25%;
+    background-color: rgb(30, 128, 255);
+    flex-direction: column;
+}
+
+/* Profile picture Section */
+.proPic{
+    display: flex;
+    width: 99%;
+    margin-top: 35px;
+    justify-content: center;
+
+}
+
+#image{
+    display: block;
+    height: 151px;
+    width: 141px;
+}
+
+#image img{
+    width: 148px;
+    height: 150px;
+    border: 3px solid white;
+    margin-top: 12px;
+    border-radius: 50%;
+}
+.myName {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.myName p{
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 29px;
+    font-weight: bold;
+    padding: 8px 31px;
+    color: white;
+}
+
+/* Line break */
+
+.blinebor{
+    display: flex;
+    justify-content: center;
+
+}
+.brline{
+    border: 1px solid wheat;
+    margin-top: 79px;
+    width: 74px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+}
+
+/* Details Section*/
+
+.details {
+    display: flex;
+    margin-top: 26px;
+    flex-direction: column
+}
+.sideheading{
+    font-size: 21px;
+    font-weight: bold;
+}
+.details img {
+    height: 35px;
+    width: 35px;
+    margin-left: 24px;
+    margin-right: 17px;
+
+}
+#detail{
+    padding: 5px;
+    margin-left: 32px;
+    margin-top: 10p
+}
+
+/* Personal Info Section*/
+.address{
+    display: flex;
+    flex-direction:row;
+    margin-top: 5px;
+}
+
+#DOB{
+    padding-top: 9px;
+    padding-left: 4px;
+}
+.pho{
+    display: flex;
+    flex-direction: row;
+}
+#phno{
+    padding-top: 8px;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+}
+.email img{
+    height: 25px;
+    width: 30px;
+    padding-top: 6px;
+}
+#mail{
+    padding-top: 12px;
+    padding-left: 5px;
+}
+
+.dob{
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;   
+    font-size: inherit;
+}
+
+.dob img{
+    height: 31px;
+    width: 69px;
+    margin-left: 4px;
+    margin-right: -2px;
+}
+
+/* Social Media Section */
+
+#linkedin{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: baseline;
+}
+#linkedin img{
+    height: 20px;
+    /* width: 23px; */
+}
+#facebook img{
+    height: 29px;
+    width: 34px;
+    margin-top: 2px;
+}
+#twitterimg{
+    height: 25px;
+    margin-top: 2px;
+}
+#insta img{
+    height: 25px;
+    margin-top: 2px;
+}
+
+#linkedin a{
+    text-decoration: none;
+}
+#linkedin a:hover{
+    font-weight: bold;
+}
+#linkedin a p{
+    padding-top: 5px
+}
+#facebook a{
+    text-decoration: none;
+}
+#facebook a:hover{
+    font-weight: bold;
+}
+#facebook a p{
+    padding-top: 13px
+}
+#twitter a{
+    text-decoration: none;
+}
+#twitter a:hover{
+    font-weight: bold;
+}
+#twitter a p{
+    padding-top: 11px
+}
+#insta a{
+    text-decoration: none;
+}
+#insta a:hover{
+    font-weight: bold;
+}
+#insta a p{
+    padding-top: 8px
+}
+#facebook{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+#twitter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+#insta{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+
+/* Skills Section */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#technicalskill{
+    padding: 5px;
+    margin-left: 24px;
+}
+
+.Clang{
+    padding: 3px;
+    margin-left: 72px;
+}
+
+/* Speaking Languages section */
+.Slang{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#speakinglang{
+    padding: 5px;
+    margin-left: 24px;
+}
+
+.knownlang{
+    padding: 3px;
+    margin-left: 72px;
+}
+
+/* Computer Languages section */
+
+.myHobbies{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#hobbiesHeading{
+    padding: 5px;
+    margin-left: 24px;
+}
+
+.hobbie{
+    padding: 3px;
+    margin-left: 72px;
+}
+
+/* =========================================================================================== */
+/* Right side section */
+
+.rightContainer{
+    display: flex;
+    float: right;
+    width: 75%;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 59px;
+}
+
+.rightContainerIcon{
+    display: flex;
+    height: 40px;
+    margin-top: 9px;
+    margin-left: 11px;
+    width: inherit;
+
+}
+.rightContainerIcon img{
+    height: 33px;
+    padding-top: 3px;
+    padding-left: 9px;
+}
+.sideheadingright{
+    color: rgb(30, 128, 255);
+    font-weight: bold;
+    font-size: 21px;
+}
+#profilename{
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.myIntro{
+    display: flex;
+    width: inherit;
+    height: 13vh;
+    margin-top: 9px;
+    margin-left: 11px;
+}
+
+.profileBrife{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    margin-left: 17px;
+}
+
+/* Experience Details section */
+
+.experience{
+    border: 2px solid rgb(251, 251, 251);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+.myExperience{
+    display: flex;
+    width: inherit;
+    height: 9vh;
+    margin-top: 9px;
+    margin-left: 11px;
+    color: black;
+    flex-direction: column;
+
+}
+.ExperienceBrife{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    margin-left: 17px;
+
+}
+/* Education Deatils Section */
+
+.education{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.myEducation{
+    display: flex;
+    width: inherit;
+    height: 28vh;
+    margin-top: 9px;
+    margin-left: 11px;
+    color: black;
+    flex-direction: column;
+}
+
+.educationBrife{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    margin-left: 17px;
+}
+
+.yearOfPass{
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    margin-left: 17px;
+}
+
+/* Certificates Deatils Section */
+
+.certificate{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.myCertificates{
+    display: flex;
+    width: inherit;
+    height: 21vh;
+    margin-top: 9px;
+    margin-left: 11px;
+    flex-direction: column;
+}
+
+.certificates-list{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    margin-left: 17px;
+}
+
+.companyName{
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    margin-left: 17px;
+    
+}
+
+/* Strength Section */
+
+.strength{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.myStrength{
+    display: flex;
+    width: inherit;
+    height: 20vh;
+    margin-top: 9px;
+    margin-left: 11px;
+    flex-direction: column;
+}
+.strength-list{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    padding: 4px;
+    margin-left: 17px;
+}
+
+/* Footer Section */
+
+.footer{
+    display: flex;
+    border: 2px solid #000;
+    background-color: rgb(17, 17, 17);
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
